@@ -22,8 +22,10 @@ header {
   flex-direction: column;
   justify-content: left;
 }
-
-#header-nav {
+header h1 {
+  width: 250px;
+}
+.header-nav-list {
   margin-bottom: 20px;
 }
 .button {
@@ -35,6 +37,7 @@ header {
   margin: 30px;
   border-radius: 30px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .description {
@@ -66,4 +69,78 @@ footer p {
 }
 .footer-nav-list li {
   padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  header h1 {
+    justify-content: left;
+  }
+  header nav {
+    justify-content: right;
+    width: 40%;
+  }
+  .header-nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    right: 0;
+    /* margin-right: 60px; */
+  }
+  .header-nav-list li {
+    margin: 10px;
+    width: 60px;
+  }
+  header .button {
+    width: 100px;
+    padding: 15px;
+    margin: 0;
+  }
+  .circle-container {
+    position: relative;
+    flex: 1;
+  }
+  .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    right: 0;
+  }
+  .small {
+    height: 125px;
+    width: 125px;
+    background-color: rgba(207, 130, 213, 0.6);
+    top: 20px;
+    right: 30px;
+  }
+  .medium {
+    height: 175px;
+    width: 175px;
+    background-color: rgba(247, 193, 162, 0.7);
+    right: 10px;
+    top: 100px;
+  }
+  .large {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(247, 136, 167, 0.6);
+    right: 100px;
+  }
+  main .button {
+    width: 50%;
+  }
+  .description {
+    width: 50%;
+  }
 }
