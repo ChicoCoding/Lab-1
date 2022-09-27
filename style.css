@@ -34,7 +34,7 @@ header {
   padding: 30px;
   margin: 30px;
   border-radius: 30px;
-  align-self: center;
+  text-align: center;
 }
 
 .description {
